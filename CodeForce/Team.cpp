@@ -8,20 +8,12 @@ int main(){
     for(int i=0;i<t;i++){
         int a,b,c;
         cin>>a>>b>>c;
+        int sum = a+b+c;
+        if(sum>=2){
+            count++;
+        }
         // int count=0;
         // int fcount=0;
-        if(a==1){
-            count++;
-        }
-        if(b==1){
-            count++;
-        }
-        if(c==1){
-            count++;
-        }
-        if(count>=2){
-            fcount++;
-        }
     }
-        cout<<fcount;
+    cout<<count;
 }
