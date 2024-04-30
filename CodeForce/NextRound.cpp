@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<numParticipant;i++){
         int contestant;
         cin>>contestant;
-        if(contestant>finisherScore) count++;
+        if(contestant>=finisherScore) count++;
     }
     cout<<count<<endl;
 }
