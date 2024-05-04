@@ -1,6 +1,6 @@
 //https://codeforces.com/problemset/problem/266/A
 
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main(){
     int n;
@@ -8,13 +8,10 @@ int main(){
     string arr;
     cin>>arr;
     int count=0;
-    for(int i=0; i<n; i++){
-        while(i<n-1){
-            if(arr[i]==arr[i+1]){
-                count++;
-            }
+    for(int i=1; i<n; i++){
+        if(arr[i-1]==arr[i]){
+            count++;
         }
-    
     }
     cout<<count;
 }
