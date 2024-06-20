@@ -6,14 +6,12 @@ int main(){
     int s;
     cin>>s;
     int arr[s];
+    int count = 0;
     for(int i = 0; i < s; i++)
     {
         cin>>arr[i];
-        // if(arr[i]=='1'){
-        //     cout<<"HARD"<<endl;
-        //     break;
-        // }else{
-        //     cout<<"EASY"<<endl;
-        // }
+        if(arr[i] == 1) count++;
     }
+    if(count > 0) cout<<"HARD";
+    else cout<<"EASY";
 }
